@@ -1,0 +1,347 @@
+.page {
+    margin-top: 1.40625rem;
+    width: 10rem;
+}
+.page .page-main {
+    width: 10rem;
+}
+.page .page-main .category-header {
+    height: 1.40625rem;
+    line-height: 1.40625rem;
+    width: 10rem;
+    padding: 0 0.375rem;
+    font-size: 0.5rem;
+    border-bottom: 1px solid #ddd;
+}
+.page .page-main .category-header h1 {
+    height: 1.40625rem;
+    line-height: 1.40625rem;
+    width: 2.1875rem;
+    float: left;
+    font-size: 0.5rem;
+}
+.page .page-main .category-header .tocal {
+    height: 1.40625rem;
+    line-height: 1.40625rem;
+    color: #b8b8b8;
+    font-weight: bold;
+}
+.page .page-main .item-category1 {
+    /*height:7.25rem;*/
+    width:10rem;
+    padding: 0.5625rem 0.40625rem;
+    border-bottom: 1px solid #ddd;
+}
+.page .page-main .item-category1 .cover {
+    width: 2.5rem;
+    height: 3.71875rem;
+    float: left;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.page .page-main .item-category1 .cover img {
+	
+    width: 2.5rem;
+    height: 3.71875rem;
+    
+}
+.page .page-main .item-category1 .info {
+    margin-left: 0.40625rem;
+    color: #a6a6a6;
+    width: 6.28125rem;
+    height: 4.8125rem;
+    float: left;
+    font-size: 0.40625rem;
+}
+.page .page-main .item-category1 .info .title {
+    width: 6.28125rem;
+    height: 0.65625rem;
+    padding-bottom: 0.09375rem;
+}
+.page .page-main .item-category1 .info .title .text {
+    font-size: 0.46875rem;
+    color: #333;
+    font-weight: bold;
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    width: 3rem;
+    display: inline-block;
+    float: left;
+}
+.page .page-main .item-category1 .info .title .tag {
+    float: left;
+    display: inline-block;
+    margin-top: 0.09375rem;
+    width: 0.9375rem;
+    height: 0.46875rem;
+    line-height: 0.46875rem;
+    text-align: center;
+    color: #fff;
+    font-size: 0.375rem;
+    background-color: #77a4b3;
+}
+.page .page-main .item-category1 .info .subtitle {
+    width: 6.28125rem;
+    height: 0.6875rem;
+    line-height: 0.6875rem;
+    color: #333;
+}
+.page .page-main .item-category1 .info .auther {
+    width: 6.28125rem;
+    height: 0.625rem;
+    line-height: 0.625rem;
+}
+.page .page-main .item-category1 .info .price {
+    margin-top: 0.15625rem;
+    width: 6.28125rem;
+    height: 0.40625rem;
+    color: #333;
+    line-height: 0.40625rem;
+}
+.page .page-main .item-category1 .info .schedule {
+    margin: 0.3125rem 0 0.46875rem;
+    height: 0.625rem;
+    width: 6.28125rem;
+}
+.page .page-main .item-category1 .info .intro {
+    width: 6.28125rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    height: 1.125rem;
+    line-height: 0.5625rem;
+}
+.page .page-main .item-category1 .info .action {
+    margin-top: 0.3125rem;
+    height: 0.625rem;
+    width: 6.28125rem;
+}
+.page .page-main .item-category1 .info .action .btn-wrapper {
+    background-color: #77a4b3;
+    height: 0.71875rem;
+    line-height: 0.71875rem;
+    text-align: center;
+    width: 1.875rem;
+    color: #fff;
+    font-size: 0.40625rem;
+    float: left;
+    border-radius: 3px;
+    display: none;
+}
+.page .page-main .item-category1 .info .action .already-sub{
+    height: 0.71875rem;
+    line-height: 0.71875rem;
+    text-align: center;
+    width: 1.875rem;
+    font-size: 0.40625rem;
+    float: left;
+}
+.page .page-main .item-category1 .info .action .sub-states {
+    float: left;
+    height: 0.625rem;
+    line-height: 0.625rem;
+    margin-left: 0.25rem;
+}
+.page .page-main .items-category{
+    height: 59.6875rem;
+    width: 10rem;
+}
+.page .page-main .item-category {
+    height:5.96875rem;
+    width: 10rem;
+    padding: 0.5625rem 0.40625rem;
+    border-bottom: 1px solid #ddd;
+}
+.page .page-main .item-category .cover {
+    width: 2.5rem;
+    height: 3.71875rem;
+    float: left;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+.page .page-main .item-category .cover img {
+    width: 2.5rem;
+    height: 3.71875rem;
+}
+.page .page-main .item-category .info {
+    margin-left: 0.40625rem;
+    color: #a6a6a6;
+    width: 6.28125rem;
+    height: 4.8125rem;
+    float: left;
+    font-size: 0.40625rem;
+}
+.page .page-main .item-category .info .title {
+    width: 6.28125rem;
+    height: 0.65625rem;
+    line-height: 0.65625rem;
+    padding-bottom: 0.09375rem;
+}
+.page .page-main .item-category .info .title .text {
+    font-size: 0.46875rem;
+    color: #333;
+    font-weight: bold;
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    width: 3rem;
+    display: inline-block;
+    float: left;
+}
+.page .page-main .item-category .info .title .tag {
+    display: inline-block;
+    float: left;
+    margin-top: 0.09375rem;
+    width: 0.9375rem;
+    height:0.46875rem;;
+    line-height:0.46875rem;;
+    text-align: center;
+    color: #fff;
+    font-size: 0.375rem;
+    background-color: #77a4b3;
+}
+.page .page-main .item-category .info .auther {
+    width: 6.28125rem;
+    height: 0.625rem;
+    line-height: 0.625rem;
+}
+.page .page-main .item-category .info .schedule {
+    margin: 0.3125rem 0 0.46875rem;
+    height: 0.625rem;
+    width: 6.28125rem;
+}
+.page .page-main .item-category .info .intro {
+    width: 6.28125rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    height: 1.125rem;
+    line-height: 0.5625rem;
+}
+.page .page-main .item-category .info .action {
+    margin-top: 0.3125rem;
+    height: 0.625rem;
+    width: 6.28125rem;
+}
+.page .page-main .item-category .info .action .btn-wrapper {
+    background-color: #77a4b3;
+    height: 0.71875rem;
+    line-height: 0.71875rem;
+    text-align: center;
+    width: 1.875rem;
+    color: #fff;
+    font-size: 0.40625rem;
+    float: left;
+    border-radius: 3px;
+}
+.page .page-main .item-category .info .action .sub-states {
+    display: inline-block;
+    height: 0.625rem;
+    line-height: 0.625rem;
+    margin-left: 0.25rem;
+}
+.list-more {
+    height: 1.40625rem;
+    line-height: 1.40625rem;
+    text-align: center;
+    width: 10rem;
+    color: #9a9a9a;
+    font-size: 0.46875rem;
+    background-color: #fff;
+    border-bottom: 1px solid #eeeeee;
+}
+/*------------------订阅信息------------*/
+.hide-sub {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom:0;
+    right:0;
+    width: 10rem;
+    z-index:1000;
+    background-color: rgba(0, 0, 0, .6);
+}
+.hide-sub .messages-sub {
+    position: fixed;
+    height: 5.0625rem;
+    width: 9.0625rem;
+    background-color: #fff;
+    color: #333;
+    top: 6.34375rem;
+    left: 0.46875rem;
+}
+.hide-sub .messages-sub .sub-top {
+    padding-left: 0.375rem;
+    font-size: 0.46875rem;
+    height: 1.3125rem;
+    line-height: 1.3125rem;
+    background: #f8f9f9;
+    border-bottom: 1px solid #ebebeb;
+}
+.hide-sub .messages-sub .sub-top .tit-top{
+    height: 1.3125rem;
+    line-height: 1.3125rem;
+    float: left;
+}
+.hide-sub .messages-sub .sub-top .mes-subtit{
+    width: 4.6875rem;
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    height: 1.3125rem;
+    line-height: 1.3125rem;
+    display: inline-block;
+}
+.hide-sub .messages-sub .sub-top .toClose {
+    float: right;
+    width: 1.5625rem;
+    height: 1.3125rem;
+    line-height: 1.3125rem;
+}
+.hide-sub .messages-sub .sub-top .toClose .closetit {
+    font-size: 0.5rem;
+    color: #77a4b3;
+    display: inline-block;
+    height: 1.3125rem;
+    line-height: 1.3125rem;
+    text-align: center;
+    width: 1.5625rem;
+}
+.hide-sub .messages-sub .sub-contents{
+    height: 3.5rem;
+    width: 9.0625rem;;
+}
+.hide-sub .messages-sub .sub-contents .sub-text {
+    margin: 0.625rem 0.3rem 0.375rem 0.3125rem;
+    height: 1.5625rem;
+    line-height: 0.6875rem;
+    width: 8.1875rem;
+    font-size: 0.4375rem;
+}
+.hide-sub .messages-sub .sub-contents .take-btn {
+    height: 0.8125rem;
+    line-height: 0.8125rem;
+    text-align: center;
+    width: 1.8125rem;
+    background: #77a4b3;
+    color: #fff;
+    font-size: 0.4375rem;
+    margin-right: 0.3125rem;
+    border-radius: 3px;
+    float: right;
+}
+.hide-sub .messages-sub .sub-ing{
+    height: 1.3125rem;
+    line-height: 1.3125rem;
+    width: 9.0625rem;
+    font-size: 0.4375rem;
+}
+.list-more{
+	clear:both;
+	border-top:1px solid #efefef;
+}
+.footer{
+	clear:both;
+}

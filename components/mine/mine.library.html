@@ -1,0 +1,18 @@
+<div class="mine-library-main">
+	<div class="mine-library-con">
+		<h3 class="library-title">拥有的作品</h3>
+		<ul class="library-item">
+			
+			<li class="library-list" ng-repeat ="x in arr | limitTo:letterLimit" ng-click="goEbook(x.id)" ui-sref="ebook">
+				<img ng-src="{{x.img}}" alt="" />
+				<div class="library-list-right">
+					<h3 class="lib-book-title">{{x.tit}}</h3>
+					<p class="lib-book-des">{{x.auth}}</p>
+					<span class="lib-book-author">自动</span>
+					<span class="lib-book-status">订阅中</span>
+				</div>
+			</li>
+		</ul>
+		<div class="library-more" ng-click="reloadMore()" ng-show="More">点击加载更多</div>
+	</div>
+</div>

@@ -1,0 +1,29 @@
+<div class="mine-main">
+	<div class="mine-guess-like">
+		<h3 class="guess-title"><a class="guess-more" href="#">></a>
+			<span>猜你喜欢</span>
+		</h3>
+		<div class="guess-content">
+			<ul class="guess-content-ul">
+				
+				<li class="guesss-item" ng-repeat ="x in arr | limitTo:10" ng-click="goEbook(x.id)" ui-sref="ebook">
+					<a href="/">
+						<img class="book-cover" ng-src="{{x.img}}"  lazy-src={{x.image}} animate-visible="true" animate-speed="0.5s" err-src="images/err_img.png"/>
+						<p class="book-title">{{x.tit}}}</p>
+						<p class="book-name">{{x.auth}}</p>
+						<p class="book-price">￥16.70</p>
+					</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+	
+	<div class="mine-cate-like">
+		<h3 class="cate-title">
+			<span>关注作者</span>
+		</h3>
+		<p class="cate-tips">如果你在豆瓣关注了某位「作者」或他的「作者的小站」，他们的所有作品都会出现在这里。 </p>
+	</div>
+</div>
+<div ui-view=""></div>

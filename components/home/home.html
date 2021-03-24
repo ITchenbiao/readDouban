@@ -1,0 +1,95 @@
+
+<!--banner-->
+<a ui-sref="competition.index"><div class="home-banner"></div></a>
+<div class="mod-main">
+	<!--column-nav-->
+	<ul class="banner-column-nav">
+		<li ui-sref="columns"><span class="enter-column">专栏></span></li>
+		<li ui-sref="serial"><span class="enter-serial">连载></span></li>
+	</ul>
+	<div class="clearfix"></div>
+	<!--cate-mod新上架-->
+	<div class="cate-mod">
+		<div class="mod-books-tit">
+			<h3>新上架</h3>
+			<a class="enter-more" ui-sref="homelistnew"></a>
+		</div>
+		<div class="books-con-main">
+			<div class="books-con-outer">
+				<div class="item-book"  ui-sref="ebook" ng-repeat="x in newData | limitTo:10" ng-click="getDataText(x.id)">
+					<div class="cover">
+						<img ng-src={{x.image}} lazy-src={{x.image}} animate-visible="true" animate-speed="0.5s" err-src="images/err_img.png">
+					</div>
+					<h3 class="book-title">{{x.title}}</h3>
+					<p class="book-auther">{{x.author[0]}}</p>
+					<p class="book-price">{{x.price|addHomeStyle}}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+	<!--cate-mod热门-->
+	<div class="cate-mod">
+		<div class="mod-books-tit">
+			<h3>热门</h3>
+			<a class="enter-more" ui-sref="homelisthot"></a>
+		</div>
+		<div class="books-con-main">
+			<div class="books-con-outer">
+				<div class="item-book" ui-sref="ebook" ng-repeat="x in hotData | limitTo:10" ng-click="getDataText(x.id)">
+					<div class="cover">
+						<img ng-src={{x.image}} lazy-src={{x.image}} animate-visible="true" animate-speed="0.5s" err-src="images/err_img.png">
+					</div>
+					<h3 class="book-title">{{x.title}}</h3>
+					<p class="book-auther">{{x.author[0]}}</p>
+					<p class="book-price">{{x.price|addHomeStyle}}</p>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class="clearfix"></div>
+	<!--cate-mod画册-->
+	<div class="cate-mod">
+		<div class="mod-books-tit">
+			<h3>画册</h3>
+			<a class="enter-more" ui-sref="homelistpic"></a>
+		</div>
+		<div class="books-con-main">
+			<div class="books-con-outer">
+				<div class="item-book" ui-sref="ebook" ng-repeat="x in drawData | limitTo:10" ng-click="getDataText(x.id)">
+					<div class="cover">
+						<img ng-src={{x.image}} lazy-src={{x.image}} animate-visible="true" animate-speed="0.5s" err-src="images/err_img.png">
+					</div>
+					<h3 class="book-title">{{x.title}}</h3>
+					<p class="book-auther">{{x.author[0]}}</p>
+					<p class="book-price">{{x.price|addHomeStyle}}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+	<!--cate-mod免费-->
+	<div class="cate-mod">
+		<div class="mod-books-tit">
+			<h3>免费</h3>
+			<a class="enter-more" ui-sref="homelistfree"></a>
+		</div>
+		<div class="books-con-main">
+			<div class="books-con-outer">
+				<div class="item-book" ui-sref="ebook" ng-repeat="x in freeData | limitTo:10" ng-click="getDataText(x.id)">
+					<div class="cover">
+						<img ng-src={{x.image}} lazy-src={{x.image}} animate-visible="true" animate-speed="0.5s" err-src="images/err_img.png">
+					</div>
+					<h3 class="book-title">{{x.title}}</h3>
+					<p class="book-auther">{{x.author[0]}}</p>
+					<p class="book-price">{{x.price|addHomeStyle}}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+	<div style="width: 9.25rem; height: 0.9375rem;"></div>
+</div>

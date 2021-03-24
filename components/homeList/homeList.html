@@ -1,0 +1,18 @@
+<!--内容-->
+<div class="mod-morellist">
+    <div class="item-listmore-category" ng-repeat=" x in homelistData | limitTo:letterLimit" ng-click="goEbook(x.id)">
+        <div class="cover">
+            <img ng-src="{{x.image}}" lazy-src={{x.image}} animate-visible="true" animate-speed="0.5s" err-src="images/err_img.png" />
+        </div>
+        <div class="info">
+            <h4 class="title"><span class="text">{{x.title}}</span><span class="tag">{{x.tag[0]}}</span></h4>
+            <div class="subtitle">{{x.tags[6].title}}</div>
+            <div class="auther">{{x.author[0]}}</div>
+            <div class="intro"> {{x.summary}}</div>
+            <div class="price">{{x.price|addHomeListStyle}}</div>
+        </div>
+    </div>
+
+    <!--更多-->
+    <div class="list-more" ng-click="reloadMore()" ng-show="More">点击加载更多</div>
+</div>

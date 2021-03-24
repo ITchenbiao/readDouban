@@ -1,0 +1,97 @@
+
+
+<div class="ebook_explain" >
+	<div class="ebook_detail">
+		<p class="ebook_name">{{items.title}}</p>
+		<p class="ebook_product">{{items.subtitle}}</p>
+		<p class="ebook_grade"><span class="ebook_score">{{items.rating.average}}</span><span class="ebook_num">(<span>{{items.rating.numRaters}}</span>人评价)</span></p>
+		<div class="ebook_author">
+			<p>{{items.author[0]}}</p>
+			<p>{{items.binding}}</p>
+			<p>{{items.publisher}}</p>
+			<p>总页面：{{items.pages}}</p>
+		</div>
+	</div>
+	<div class="ebook_img">
+		<img ng-src={{items.image}}  lazy-src={{x.image}} animate-visible="true" animate-speed="0.5s" err-src="images/err_img.png"/>
+	</div>
+	<div class="ebook_btn">
+		<a ui-sref="reader.ebook.id" ng-click="buy(items.image,items.price,items.author[0],items.title,items.id)"><p class="ebook_read">阅读</p></a>
+		<span class="ebook_share" ng-click="share_class()"></span>
+	</div>
+	<div class="ebook_buyandsend">
+		<div class="ebook_price">
+			<span class="items_price">{{price}}</span>
+		</div>
+		<a ui-sref="purchase" ng-click="buy(items.image,items.price,items.author[0],items.title,items.id)"><div class="ebook_buy">
+			<i class="buy"></i>
+			<span class="buy_text">购买</span>
+		</div></a>
+		<a ui-sref="gift" ng-click="buy(items.image,items.price,items.author[0],items.title,items.id)"><div class="ebook_send">
+			<i class="send"></i>
+			<span class="send_text">赠送</span>
+		</div></a>
+	</div>
+</div>
+
+<div class="ebook_about">
+	<h3>简介</h3>
+	<div class="ebook_about_text">
+		<p class="about_p">{{items.summary}}
+		</p>
+	</div>
+	<h3>作者简介</h3>
+	<p class="about_p">{{items.author_intro}}</p>
+	<div class="ebook_catalogue">
+		<h3>目录</h3>
+		<ul id="catalogUl">
+			<li id="cataLi" class="LI1" ng-click="show()"></li>
+		</ul>
+	</div>
+	<div class="ebook_tag">
+		<h3>标签</h3>
+		<div class="tags">
+			<span ng-repeat="x in items.tags |limitTo:5">{{x.title}}</span>
+		</div>
+	</div>
+	<div class="ebook_talk">
+		<h3>读者评论</h3>
+		<div class="talk_about">
+			还没有读者评论
+		</div>
+	</div>
+</div>
+<div class="overlay_page1">
+	<div class="warp">
+		<div class="ebook_cont">
+			<div class="share_link">
+				<p>分享至</p>
+				<ul class="share_ul">
+					<li>
+						<i class="douban_share"></i>
+						<span>豆瓣</span>
+					</li>
+					<li>
+						<i class="xinlang_share"></i>
+						<span>新浪</span>
+					</li>
+					<li>
+						<i class="pyq_share"></i>
+						<span>朋友圈</span>
+					</li>
+					<li>
+						<i class="weix_share"></i>
+						<span>微信</span>
+					</li>
+					<li class="last_li_share">
+						<i class="copy_link"></i>
+						<span>复制链接</span>
+					</li>
+				</ul>
+			</div>
+			<div class="cancel_share" ng-click="cancel()">
+				<p>取消</p>
+			</div>
+		</div>
+	</div>
+</div>

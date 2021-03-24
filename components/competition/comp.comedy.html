@@ -1,0 +1,54 @@
+
+<div class="comp_top">
+	<div class="comp_p">
+	<p class="about">
+		喜剧通常是一种戏剧形式，也会出现写作之中，如幽默已是一种小说写作传统。 本届征文，我们同时欢迎喜剧的「戏剧性」和「语言性」，可以是有强烈情节推动的、 有困境、有矛盾冲突的完整喜剧故事， 也可以是场景简单、语言幽默的短故事集。
+	</p>
+	</div>
+	<div class="rewards">
+		<h3>奖项</h3>
+		<ul>
+			<li>
+				<span class="first_span"></span>
+				<div class="first_reward">
+					<p class="rewards_first_p">首奖</p>
+					<p class="rewards_sec_p">1名，奖金2万元</p>
+				</div>
+			</li>
+			<li>
+				<span class="excellent_span"></span>
+				<div class="excellent_reward">
+					<p class="rewards_first_p">优秀奖</p>
+					<p class="rewards_sec_p">3名，奖金各1万元</p>
+				</div>
+			</li>
+			<li>
+				<span class="special_span"></span>
+				<div class="special_rewards">
+					<p class="rewards_first_p">特别奖·最佳笑点奖</p>
+					<p class="rewards_sec_p">1名，奖金1万元</p>
+				</div>
+			</li>
+		</ul>
+		<div class="cooperation_rewards">
+			合作方奖项「开心麻花特别奖」1 名，奖金 1 万元
+		</div>
+	</div>
+</div>
+<div class="comp_bottom">
+	<div class="book_list" ng-repeat="x in items">
+		<figure ng-click="putStorage(x.id)" ui-sref="ebook">
+			<img class="book_img" ng-src={{x.image}}  lazy-src={{x.image}} animate-visible="true" animate-speed="0.5s" err-src="images/err_img.png">
+			<figcaption>
+				<h3 class="book_name">{{x.title}}</h3>
+				<p class="book_author">{{x.author[0]}}</p>
+				<p class="book_star"><span class="book_grade">{{x.rating.average}}</span>|<span class="book_num">{{x.rating.numRaters}}</span>人评价</p>
+				<a ui-sref="reader.ebook.id" class="book_read">阅读</a>
+			</figcaption>
+		</figure>
+		<div class="book_recommend">
+			<h3>作者介绍</h3>
+			<p>{{x.author_intro}}</p>
+		</div>
+	</div>
+</div>

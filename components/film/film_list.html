@@ -1,0 +1,55 @@
+<div class="film_list_content">
+	<div class="film_list_banner">
+		<div class="film_list_title">影视改编项目</div>
+		<div class="film_list_name">{{books.title}}</div>
+		<div class="film_list_more">
+			<p>原作品</p>
+			<a ui-sref="ebook" ng-click="goEbook()">查看作品详情&gt;</a>
+		</div>
+		<div class="film_list_info">
+			<div class="film_img"><img ng-src="{{books.image}}" alt=""></div>
+			<div class="note_info">
+				<p>作者：{{books.author[0]}}</p>
+				<p>字数：约 40,000 字</p>
+				<p>标签：<span ng-repeat="y in books.tags.slice().reverse() | limitTo:2">{{y.name}} </span></p>
+				<p class="p4">
+					<span class="star_black">
+                            <span class="star_red" ></span>
+					</span>
+					<span class="score">{{books.rating.average}}</span>
+					<span class="integral">{{books.rating.numRaters}} 人评价</span>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="film_list_bar">
+		<p>改编剧本大纲收集中</p>
+	</div>
+	<div class="film_list_note">
+		<p>豆瓣阅读原创作品，邀请专业编剧和影视公司共同参与它的影视改编。</p>
+		<p>编剧可以提交改编剧本大纲。优秀编剧将获得豆瓣阅读资助，将其发展成完整剧本。</p>
+		<p>影视公司可以查看豆瓣阅读挑选出的优秀大纲， 向豆瓣阅读联系版权购买或投资制作的其他事宜。
+		</p>
+		<a class="film-list_login" ui-sref="ebook" ng-click="goEbook()">我是编剧/我是制片方</a>
+	</div>
+	<div class="film_list_recommended">
+		<h3>豆瓣阅读推荐</h3>
+		<p>
+			两名在当地小有名气的作家，暂时放弃了创作， 合伙承包了一张报纸，创业打拼。在市场竞争中披荆斩棘，在私人生活上斗智斗勇。 作品中的两个人以两种不同的方式，回答了两种不同的命运。
+		</p>
+	</div>
+	<div class="film_list_read">
+		<h3>内容介绍</h3>
+		<p>"我"是当地一个小有名气的作家，下岗之后本想好好创作自己的长篇作品，却被昵称狐狸的另一个作家拉去一起做报纸。在当地苦熬出不了头的时候，发现北京有不错的商机，我和狐狸决定北上。</p>
+		<p>狐狸决定报纸的内容，而我负责跑印刷和广告。当于颖这个三十八岁的离婚女子成为广告部主任之后，我们的生意开始有了起色，狐狸是非常理想的合伙人。但是我的创作却因此停滞不前。</p>
+		<p>因为报社忙碌，我和狐狸半年都没回老家。狐狸和于颖带出来的手下李小惠有了关系，在业务上也偏袒她，引来别的广告员王玉芬的不满。我只能居间调停。我理解狐狸的需求，但我从未看不起他的人格。然而我从未对不起自己老婆，即便出去应酬也从不放纵。</p>
+		<p>过年的时候终于有了利润，我给老婆买了一件昂贵的貂皮大衣。没想到不久老婆就和一个离婚富商跑了，把孩子留给我年迈的母亲。母亲开始责问我去北京的目的。家散了，报纸的业务却又开始下滑。</p>
+		<p>一个作者告我们剽窃，狐狸之前掉以轻心，导致作者直接告到总社去。事情从这里开始叠加，狐狸一方面应付总社的责难，一方面还要应付老婆的发难，原来他老婆已经知道他和李小惠的事，狐狸一身都是老婆发泄的伤痕。</p>
+		<p>人逢中秋倍感孤独，我与王玉芬有了突破性的进展，狐狸却死在一场车祸里，为了救一只被遗弃的小狗。经过思量后，我决定自己接手报纸的全盘业务。当家后我才发现内容、标题、排版的好坏决定了报纸的质素，报纸的退订率大幅上升，明白了此前狐狸投入的精力有多少。</p>
+		<p>又到年关，这是一个惨淡的过年。年后才知道一直支持我不惜拿出资金援助我的王玉芬被烟花毁容，我少了最得力的助手。于颖也要带着手下离开。我卖了房子的钱也终于支持不住报纸的运转，最后我不得不放弃。</p>
+		<p>我当上保安，拿着微薄的薪酬开始把长篇小说完成。当我打算去看看王玉芬的时候，收到了小说即将出版的信息。</p>
+	</div>
+	<div class="film_list_look">
+		<a class="look" ui-sref="ebook" ng-click="goEbook()">查看原作品</a>
+	</div>
+</div>

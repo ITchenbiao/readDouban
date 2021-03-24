@@ -1,0 +1,64 @@
+<div class="gift-main" data-ng-init="initGift()">
+	<section clsas="box-section">
+		<div class="box-img">
+			<img alt="/" ng-src={{img}}  err-src="images/err_img.png"/>
+		</div>
+		<div class="box-cover">
+			<div class="box-bowknot"></div>
+		</div>
+		<div class="box-title">
+			<h3 class="box-heade">{{title}}</h3>
+			<p class="box-des">{{author}}</p>
+		</div>
+	</section>
+	<section class="gift-note">
+		<div class='gift-step1'>
+			<div class="step1-title">1</div>
+			<h3>送数量</h3>
+			<p class="step1-des">你可以只选一本，单独送给某人，也可以多选几本，发到微信群、朋友圈或公共平台，让大家来抢。</p>
+			<h3>送出
+				<input class="ipt-count" type="text" maxlength="3" ng-model="count"/>	
+			本</h3>
+		</div>
+		<div class="gift-step2">
+			<div class="step1-title">2</div>
+			<h3>写赠言</h3>
+			<p class="step1-des">收到礼物的友邻打开这部作品阅读时，<br/>会在扉页上看到你的赠言。</p>
+		</div>
+		<div class="gift-write">
+			<div class="message">
+				<div class="book-bowknot"></div>
+				<div class="node-create" ng-click="viewMessage()" ng-show="before_visible">
+					<span class="gift-pen"></span>
+					<span class="message-tips">在这里写下你的赠言...</span>
+				</div>
+				
+				<div class="node-over" ng-show="modefy_visible">
+					<h4 class="node-head">给我的友邻:</h4>
+					<div class="node-content">
+						{{content}}
+					</div>
+					<span class="user-name">Lemon</span>
+					<time class="node-over-time">2016-10-21</time>
+				</div>
+				<div class="modify" ng-show="modefy_visible">
+					<span class="modify-pen"></span>
+					<span class="modify-note" ng-click="modefyMessage()">修改留言...</span>
+				</div>
+			</div>
+		</div>
+		
+		<div class="gift-actions" ng-click="createGift()">
+			生成礼物
+		</div>
+
+		<div class="gift-wrap" ng-show="wrap_visible">
+			<div class="gift-dialog">
+				<span class="dialog-close" ng-click="viewMessage()">×</span>
+				<textarea class="dialog-content" name="" id="dialog_content" maxlength="140" placeholder="愿你拥有愉快的时光" ng-model="ailer" ></textarea>
+				<button class="gift-rear" ng-click="writeOver()">确定</button>
+			</div>
+		</div>
+	</section>
+
+</div>

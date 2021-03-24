@@ -1,0 +1,42 @@
+<div class="search-mian">
+
+	<div class="search-box">
+		<form class="rm-sear" action="">
+			<input class="ipt-query" type="text" placeholder="作品 / 电子书 / 专栏 / 连载 / 作者" autocomplete="off" ng-model="searchText" ng-keyup="suggestKeyUp($event)" ng-blur="suggestBlur()" />
+			<input class="btn-sear" ype="submit" value="搜索" ng-click="searchBook()" />
+			<input class="btn-clear" type="reset" value="清除" />
+		</form>
+		<ul class="search-suggest" ng-show="suggessUl">
+			<li ng-repeat="x in bookTitle | filter:searchText| limitTo:4" ng-click="getLiText(x.title)">{{x.title}}</li>
+		</ul>
+	</div>
+
+	<section class="more-works">
+		<ul class="more-works-ul" ng-show="searItem">
+			<li class="works-item" ng-repeat="x in book | limitTo: letterLimit" ng-click="putStorage(x.id)">
+				<a ui-sref="ebook">
+					<figure class={{x.id}}>
+						<img class="work_name" ng-src={{x.image}} lazy-src={{x.image}} animate-visible="true" animate-speed="0.5s" err-src="images/err_img.png">
+						<ficapton class="item-right">
+							<h3 class="title">
+								<span class="text">{{x.title}}</span>
+								<span class="tag">{{x.binding}}</span>
+							</h3>
+							<span class="author">{{x.author}}</span>
+							<span class="rating">{{x.publisher}}</span>
+							<p class="intro">{{x.summary}}</p>
+							<span class="price">{{x.price|searAddStyle}}</span>
+						</ficapton>
+					</figure>
+				</a>
+			</li>
+		</ul>
+	</section>
+
+	<section class="list-more" ng-show="searNoItem">
+		<p class="empty-list">没有搜索结果，试试其他关键词吧</p>
+	</section>
+		
+  		
+</div>
+ <div class="reload-more" ng-click="reloadMore()" ng-show="More">点击加载更多</div>

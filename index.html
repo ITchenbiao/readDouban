@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>豆瓣阅读</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<link href="images/x-icon.png" rel="icon" type="image/x-icon" />
+		<link rel="stylesheet" href="components/com/reset.css">
+		<link rel="stylesheet" href="components/com/com.css">
+		<link rel="stylesheet" href="components/com/swiper.min.css">
+		<link rel="stylesheet" href="lib/animate.min.css">
+		<script src="lib/angular.min.js"></script>
+		<script src="lib/angular-ui-router.js"></script>
+		<script src="lib/angular-css.min.js"></script>
+		<script src="lib/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<header class="header">
+			<span class="header-logo" ui-sref="home"></span>
+			<a class="btn-expend-nav"></a>
+			<a class="action-btn" ui-sref="search"><span class="btn-search"></span></a>
+			<a class="btn-user" href="#"><span class="btn-userico"></span></a>
+			<!--导航菜单-->
+			<div class="nav-menu" style="display: none">
+				<div class="arrow-top"></div>
+				<div class="menu-items">
+					<a ui-sref="home" class="menu-item">电子书店</a>
+					<a ui-sref="film" class="menu-item">影视改编</a>
+					<a ui-sref="clip" class="menu-item">短片计划</a>
+				</div>
+			</div>
+			<!--用户菜单-->
+			<div class="user-menu" style="display: none;">
+				<div class="arrow-top"></div>
+				<div class="menu-items">
+					<a href="#" class="menu-item">账户余额</a>
+					<a href="#" class="menu-item">礼券</a>
+					<a ui-sref="mine.library" class="menu-item">拥有的作品</a>
+					<a href="#" class="menu-item">礼物</a>
+					<a href="#" class="menu-item">登录</a>
+				</div>
+			</div>
+		</header>
+
+		<div class="slider splash">
+			<div class="swiper-container splash-box ">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="images/splash1.jpg" alt=""></div>
+					<div class="swiper-slide"><img src="images/splash2.jpg" alt=""></div>
+					<div class="swiper-slide"><img src="images/splash3.jpg" alt=""></div>
+					<div class="swiper-slide div-begin"><img src="images/splash4.jpg" alt="">
+						<span class="begin">开始体验</span>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+			<div class="skip">跳过</div>
+		</div>
+
+		<div ui-view=""></div>
+		<!--底部-->
+		<footer class="footer">
+			<p class="isstyle">手机版 |
+				<a ui-sref="home" class="go-web">网页版</a>
+			</p>
+			<p class="copyright">© 2005-2016 douban.com</p>
+		</footer>
+		
+		<script src="lib/me-lazyload.js"></script>
+		<script src="script/swiper.min.js"></script>
+		<script src="script/app.js"></script>
+		<script src="script/com.js"></script>
+		<script src="components/home/home.js"></script>
+		<script src="components/search/search.js"></script>
+		<script src="components/purchase/purchase.js"></script>
+		<script src="components/gift/gift.js"></script>
+		<script src="components/mine/mine.js"></script>
+
+		<script src="components/reader/reader.js"></script>
+		<script src="components/ebook/ebook.js"></script>
+		<script src="components/competition/competition.js"></script>
+
+		<script src="components/film/film.js"></script>
+		<script src="components/clip/clip.js"></script>
+
+		<script src="components/category/category.js"></script>
+		<script src="components/columns/columns.js"></script>
+		<script src="components/homeList/homeList.js"></script>
+
+	</body>
+
+</html>

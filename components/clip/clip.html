@@ -1,0 +1,93 @@
+<div class="clip_content">
+	<div class="clip_banner"></div>
+	<div class="clip_nav">
+		<a href="#" class="clip_home">首页</a>
+		<a class="film_link" ui-sref="film">
+			<span class="clip_film_img"></span>影视改编
+		</a>
+	</div>
+	<div class="clip_short_film">
+		<h3>什么是短片</h3>
+		<p>短片是指片长不超过 15 分钟的影片。它是电影行业中重要的内容形式，各大电影节都有专门的短片奖项。</p>
+		<p>青年导演在拍电影的职业道路上，都会从拍短片开始，这也是他们展示自己拍片能力的重要开始。对于观众而言，短片本身也很好看， 越来越多的年轻人在手机上看短片、分享短片。豆瓣的影视计划会从短片开始。
+		</p>
+	</div>
+	<div class="clip_plan">
+		<h3>豆瓣短片计划</h3>
+		<p>豆瓣将提供青年导演拍短片的机会。「短片计划」如下：</p>
+		<h4>豆瓣提供小说</h4>
+		<p>豆瓣阅读将开放原创小说的短片拍摄权，即导演可以在豆瓣阅读里挑选自己想改编拍摄的小说。 如果觉得在全站挑选小说有困难，豆瓣阅读也会精选 20 部作品，推荐导演可以来拍这些故事。豆瓣阅读的原创小说
+			<a href="//read.douban.com">在这里</a>。</p>
+		<div class="clip_more">
+			<a href="javascript:void(0)">了解更多</a>
+		</div>
+	</div>
+	<div class="clip_choose_film">
+		<h3>入选电影</h3>
+		<div class="clip_card" ng-click="play_film()">
+			<div class="clip_play">
+				<video controls=c ontrols preload="metadata">
+					<source src="video/mov_bbb.mp4">
+					<!-- <source src="/video/mov_bbb.mp4">-->
+					您的浏览器不支持视频播放 请及时更新
+				</video>
+
+			</div>
+			<div class="clip_film_title">一日英雄 A Hero for a Day</div>
+			<div class="clip_film_text">
+				<p>他（Colton Shires 饰演），一个看上去普通的不能再普通的高二男生，却是来自一个残缺破碎的家庭，又因为矮小和口吃而饱受同学孤立和欺辱。这一年他忍无可忍，决心向曾经羞辱他的同学报仇雪恨。为了这个目标，他默默筹备了几个月，然而就在他策划好一切，准备掏出费尽心机搞来 的枪，并即将扣动扳机的那一刻，一场突如其来的意外却打乱了他缜密的复仇计划……</p>
+				<p>本片由豆瓣阅读授权改编，并投资拍摄，取材自第三届豆瓣阅读征文大赛悬疑组首奖作品《校园枪击案策划指南》，原著作者为旅德华裔作家梁柯先生。</p>
+			</div>
+			<div class="clip_card_more">
+				<a href="javascript:void(0)">查看详情</a>
+			</div>
+		</div>
+	</div>
+	<div class="clip_apply">
+		<h3>导演申请</h3>
+		<p>我们希望提供导演拍片机会。你可以在豆瓣所有原创作品中挑选故事来拍，如果豆瓣上没有找到喜欢的故事， 你也可以将自己原创短片的想法，向我们提出申请。
+		</p>
+		<div class="clip_apply_info">
+			<p>以下信息发送至
+				<a href="mailto:read@douban.com" class="email">read@douban.com</a>一个星期内我们将与你联系，沟通后续事宜。</p>
+			<ol class="clip_ol">
+				<li>关于你想拍摄作品的简单内容策划、预算方案</li>
+				<li>关于你个人的简单介绍（履历和代表作品）</li>
+				<li>你的联系方式</li>
+			</ol>
+		</div>
+	</div>
+	<div class="clip_novel">
+		<h3>推荐小说</h3>
+		<div class=" clip_img_list">
+			<div class="list_top">
+				<dl ng-repeat="x in data | limitTo:3" ng-click="setclipid(x.id)" ui-sref="ebook">
+					<dt>
+                        <img ng-src="{{x.image}}" alt="">
+                    </dt>
+					<dd>
+						<a href="#">{{x.title}}</a>
+						<p>Airs</p>
+					</dd>
+				</dl>
+			</div>
+			<div class="list_down">
+				<dl ng-repeat="y in data.slice().reverse() | limitTo:3" ng-click="setclipid(y.id)" ui-sref="ebook">
+					<dt>
+                        <img ng-src="{{y.image}}" alt="">
+                    </dt>
+					<dd>
+						<a href="#">{{y.title}}</a>
+						<p>Airs</p>
+					</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="clip_img_list_more">
+			<a href="javascript:void(0)">更多推荐作品</a>
+		</div>
+	</div>
+	<div class="clip_footer">
+		<div><img src="images/clip_footer.png" alt=""></div>
+	</div>
+</div>

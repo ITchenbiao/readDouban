@@ -1,0 +1,12 @@
+
+<div class="bookshelf">
+	<ul class="bookshelf-item">
+		<li class="bookshelf-list" ng-repeat="x in arr" ng-click="goEbook(x.id)" ui-sref="ebook">
+			<a  ui-sref="reader.ebook.id" > 
+				<img ng-src="{{x.img}}" alt="" />
+				<p>{{x.auth}}</p>
+			</a>
+		</li>
+	</ul>
+</div>
+<div ui-view=""></div>

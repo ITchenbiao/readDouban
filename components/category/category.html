@@ -1,0 +1,59 @@
+<!-----------------内容------------->
+<div class="page" data-ng-init="loadText()">
+	<div class="page-main">
+		<div class="category-header">
+			<h1>{{newvalue}}</h1>
+			<span class="tocal">{{total}}</span>
+		</div>
+		<div class="items-category">
+			<div class="item-category" ng-repeat=" x in book | limitTo:letterLimit" ng-click="goEbook($event,x.id,x.image,x.title,x.author[0])">
+				<div class="cover">
+					<img ng-src='{{x.image}}'  lazy-src={{x.image}} animate-visible="true" animate-speed="0.5s" err-src="images/err_img.png"/>
+				</div>
+				<div class="info">
+					<h4 class="title">
+                        <span class="text">{{x.title}}</span>
+                        <span class="tag">专栏</span>
+                    </h4>
+					<div class="auther">{{x.author[0]}}</div>
+					<div class="schedule">每周五更新，已发表4/65篇</div>
+					<div class="intro"> {{x.summary}}</div>
+					<div class="action" id="{{x.id}}">
+						<div class="wrap-hide">
+							<div class="btn-wrapper">订阅</div>
+							<span class="sub-states">16 订阅</span>
+						</div>
+						<div class="already-sub" style="display:none">
+							已订阅
+							<span class="sub-states">17 订阅</span>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--更多-->
+<div class="list-more" ng-click="reloadMore()" ng-show="More">点击加载更多</div>
+
+<!--订阅信息-->
+<div class="hide-sub" ng-show="mySub">
+	<div class="messages-sub">
+		<div class="sub-top">
+			<span class="tit-top">订阅专栏:</span>
+			<span class="mes-subtit">{{titlesub}}</span>
+			<div class="toClose">
+				<span class="closetit" ng-click="isClose()">x</span>
+			</div>
+		</div>
+		<div class="sub-contents" ng-show="Tohide">
+			<p class="sub-text">订阅成功后，专栏有更新时你将会收到提醒。</p>
+			<span class="take-btn" ng-click="SuccessSub()">订阅</span>
+		</div>
+
+		<div class="sub-ing" ng-show="Toshow">
+			订阅中......
+		</div>
+	</div>
+</div>

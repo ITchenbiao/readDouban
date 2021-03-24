@@ -1,0 +1,117 @@
+.reader-column{
+	display:none;
+}
+.reader-top {
+	display: none;
+}
+.footer{
+	display:none;
+}
+.reader_article{
+	font-size: 0.7rem;
+	font-weight: 600;
+	margin: 1.8125rem 0 0.2rem 0.3rem;
+}
+.reader_data{
+	font-size: 0.4rem;
+	margin-left: 0.3rem;
+	color: #E3DFD1;
+}
+.Column{
+	width: 10rem;
+	height: 2rem;
+	border-bottom: 1px solid #E3DFD1;
+	border-top: 1px solid #E3DFD1;
+	margin-top: 1rem;
+}
+.column_img{
+	float: left;
+	width: 2rem;
+	height: 2rem;
+	font-size: 0;
+	text-align: center;
+}
+.column_img i{
+	display: block;
+	width: 0.4rem;
+	height: 0.4rem;
+	background: url( ../../images/icon-column.png) no-repeat left center;
+	background-size:100%;
+	margin: 0.3rem 0 0.1rem 0.8rem;
+}
+.column_img span{
+	font-size: 0.4rem;
+}
+
+.column_author{
+	width: 8rem;
+	float: left;
+	height: 2rem;
+	padding: 0.3rem 0 0 0;
+}
+.column_author p{
+	color: #E3DFD1;
+	font-size: 0.4rem;
+	border-left: 1px solid #E3DFD1;
+	padding-left: 0.3rem;
+}
+.contant{
+	margin-bottom: 1.5rem;
+}
+.contant p{
+	font-size: 0.5rem;
+	line-height: 0.8rem;
+	margin: 0.2rem 0.3rem 0.2rem 0.3rem;
+	text-indent: 2em;
+}
+.copyright{
+	margin-left: 0.5rem;
+}
+.copyright p{
+	font-size: 0.3rem;
+	color: #cdcdcd;
+}
+fieldset{
+	margin-top: 1rem;
+	font-size: 0.3rem;
+	text-align: center;
+	border: none;
+	border-top-color: #CDCDCD;
+	border-top-style: solid;
+	border-top-width: 1px;
+}
+legend{
+	display: block;
+}
+.Likes{
+	width: 10rem;
+	height: 3rem;
+	border-bottom: 1px solid #CDCDCD;
+}
+.choicelike{
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 50%;
+	background: #fff url( ../../images/red_heart.jpg) no-repeat;
+	background-size: 0.8rem;
+	background-position: 0.1rem;
+	border: 1px solid #FA595F;
+	margin: 1rem 0 0 4rem;
+}
+.choicedislike{
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 50%;
+	background: #fff url( ../../images/white_heart.jpg) no-repeat;
+	background-size: 0.8rem;
+	background-position: 0.1rem;
+	border: 1px solid #FA595F;
+	margin: 1rem 0 0 4rem;
+}
+.Likes p{
+	width: 10rem;
+	font-size: 0.3rem;
+	text-indent: 4.2rem;
+}

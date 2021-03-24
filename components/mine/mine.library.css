@@ -1,0 +1,78 @@
+body{
+	width:10rem;
+	height:100%;
+	background:#f8f9f9;
+}
+.mine-main{
+	display:none;
+}
+
+.mine-library-main{
+	width:10rem;
+	display:block;
+	margin-top: 1.3125rem;
+	background: #f8f9f9;
+}
+.mine-library-con{
+	width:10rem;
+}
+.library-title{
+	height:1.5rem;
+	line-height:1.5rem;
+	width:10rem;
+	color:#aac6d0;
+	font-size:.5rem;
+	text-align:center;
+	border-bottom:1px solid #eee;
+}
+.library-item{
+	width:10rem;
+}
+.library-list{
+	width:10rem;
+	display:inline-block;
+	height:2.4375rem;
+	border-bottom:1px solid #eee;
+}
+.library-list img{
+	width:1.25rem;
+	height:1.875rem;
+	box-shadow:.1rem .1rem .1rem #c3c3c3;
+	margin:.1875rem .375rem 0;
+}
+.lib-book-title{
+	height:.4rem;
+	margin:.1rem 0 ;
+	color:#333;
+	font-size:.45rem;
+}
+.lib-book-des{
+	font-size:.375rem;
+	line-height:.7rem;
+	width:7rem;
+	color:#444;
+	text-overflow: ellipsis;
+	overflow:hidden;
+	white-space:nowrap;
+}
+.library-list-right{
+	height:100%;
+	display:inline-block;
+	vertical-align:top;
+}
+.lib-book-author,.lib-book-status{
+	color:#b7a6a8;
+	font-size:.375rem;
+	display:block;
+}
+
+.library-more{
+	width:10rem;
+	height:1.5rem;
+	line-height:1.5rem;
+	text-align:center;
+	background:#fff;
+	font-size:.45rem;
+	border-bottom:1px solid #ebebeb;
+	color:#8e8e8e;
+}

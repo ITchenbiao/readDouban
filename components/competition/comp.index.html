@@ -1,0 +1,146 @@
+		<div class="comp_top">
+			<div class="comp_p">
+	<p class="about">
+		本届征文大赛设有「职业女性故事」「喜剧故事」「近未来科幻故事」三个组别。每个组别各设：首奖 1 名，奖金 2 万元；优秀奖 3 名，奖金各 1 万元；特别奖 2 名，奖金各 1 万元。豆瓣阅读征文大赛是由豆瓣阅读主办的面向所有人的主题征文活动，旨在选拔优秀的原创中篇作品，目前已举办至第四届。
+	</p>
+	<p class="about">
+		本届征文共收到 2063 部投稿，编辑部正在进行入围作品的初选。入围作品自 2016 年 10 月 17 日起，分批上架公布。大赛评选结束前，所有入围作品均可免费领取阅读。
+	</p>
+	</div>
+		</div>
+		<h1 class="works">最新入围作品</h1>
+		
+		<div class="works_list" ng-repeat="x in itemIndex |limitTo:6">
+		<div class="tag">
+				最新入围作品
+			</div>
+			<figure ng-click="putStorage(x.id)" ui-sref="ebook">
+			<img class="book_img" lazy-src={{x.image}} animate-visible="true" animate-speed="0.5s" err-src="images/err_img.png">
+			<figcaption>
+				<h3 class="book_name">{{x.title}}</h3>
+				<p class="book_author">{{x.author[0]}}</p>
+				<p  class="book_read">阅读</p>
+			</figcaption>
+		</figure>
+		<div class="book_recommend">
+			<h3>作者简介</h3>
+			<p>{{x.author_intro}}</p>
+		</div>
+		</div>
+		
+		<div class="career_story">
+			<div class="career_img">
+				<i></i>
+			</div>
+			<div class="career_title">
+				职业女性故事
+			</div>
+			<a ui-sref="competition.career" class="more">入围作品<span></span></a>
+		</div>
+		
+		<ul class="career_story_list">
+			<li ng-repeat="x in itemCareer | limitTo:6" ng-click="putStorage(x.id)"><a ui-sref="ebook">
+				<img  lazy-src={{x.image}} animate-visible="true" animate-speed="0.5s" err-src="images/err_img.png">
+				<p class="career_book_name">{{x.title}}</p>
+				<p class="career_book_author">{{x.author[0]}}</p></a>
+			</li>
+		</ul>
+		
+		<div class="career_story comedy_story">
+			<div class="career_img comedy_img">
+				<i></i>
+			</div>
+			<div class="career_title">
+				喜剧故事
+			</div>
+			<a ui-sref="competition.comedy" class="more">入围作品<span></span></a>
+		</div>
+		
+		<ul class="career_story_list">
+			<li ng-repeat="x in itemComedy | limitTo:6" ng-click="putStorage(x.id)"><a ui-sref="ebook">
+				<img  lazy-src={{x.image}} animate-visible="true" animate-speed="0.5s" err-src="images/err_img.png">
+				<p class="career_book_name">{{x.title}}</p>
+				<p class="career_book_author">{{x.author[0]}}</p></a>
+			</li>
+		</ul>
+		
+		<div class="career_story science_story">
+			<div class="career_img science_img">
+				<i></i>
+			</div>
+			<div class="career_title">
+				近未来科幻故事
+			</div>
+			<a ui-sref="competition.science" class="more">入围作品<span></span></a>
+		</div>
+		
+		<ul class="career_story_list">
+			<li ng-repeat="x in itemScience | limitTo:6" ng-click="putStorage(x.id)"><a ui-sref="ebook">
+				<img  lazy-src={{x.image}} animate-visible="true" animate-speed="0.5s" err-src="images/err_img.png">
+				<p class="career_book_name">{{x.title}}</p>
+				<p class="career_book_author">{{x.author[0]}}</p></a>
+			</li>
+		</ul>
+		
+		<div class="explain">
+			<h2>赛事说明</h2>
+			<p class="explain_p">参赛要求</p>
+			<ul class="require">
+				<li>大赛分组别进行评选，投稿时需选择其中一组，不可同时参加。</li>
+				<li>每位参赛者仅限提交 1 部作品，提交之后不可修改或更换作品。</li>
+				<li>参赛作品需符合对应主题的内容要求。</li>
+				<li>参赛作品字数在 2 万字至 5 万字。</li>
+				<li>参赛作品必须以简体中文写作，体裁为小说。</li>
+				<li>参赛作品必须未在公开刊物发表过，且未曾获得任何奖项。</li>
+			</ul>
+		</div>
+		<div class="Process">
+			<p class="explain_p">大赛流程</p>
+			<div class="num_count">
+				1
+			</div>
+			<div class="process_name">
+				公开征稿
+			</div>
+			<div class="process_text">
+				面向所有人公开征集作品。每位参赛者只能选择一个主题提交一部作品。具体作品要求见大赛主题说明。
+			</div>
+			<div class="num_count">
+				2
+			</div>
+			<div class="process_name">
+				公布入围
+			</div>
+			<div class="process_text">
+				豆瓣阅读编辑部会审读在规定时间内提交的每一部参赛作品，从中挑选出入围作品。 入围及评选期间，读者可以免费领取阅读。
+			</div>
+			<div class="num_count">
+				3
+			</div>
+			<div class="process_name">
+				读者评选
+			</div>
+			<div class="process_text">
+				所有入围作品公布后，大赛将开放读者评委报名，最后根据读者评委的有效评分选出各组首奖和优秀奖。 特别奖由豆瓣阅读编辑部选出，合作方奖项由相关合作方选出。
+			</div>
+			<div class="num_count">
+				4
+			</div>
+			<div class="process_name">
+				公布结果
+			</div>
+			<div class="process_text">
+				评选结束后，大赛将公布获奖作品名单并择期颁奖。 所有入围作品将在豆瓣阅读定价 1.99 元出售。
+			</div>
+		</div>
+		<div class="statement">
+			<p class="explain_p">大赛声明</p>
+			<ul class="statement_ul">
+				<li>参赛作品严禁抄袭，一旦发现将取消参赛资格。</li>
+				<li>获奖作品奖金在奖项公布后将由豆瓣阅读保留 15 天，以备资格审查。所有奖金均为税前，并须代缴个人所得税。 公示期结束后，获奖作品如被发现抄袭，所获奖项和奖金也将被追回，由此带来的一切后果由抄袭者承担。</li>
+				<li>入围作品须与豆瓣阅读签署包括电子版、纸书出版、影视改编在内的独家授权协议。 豆瓣阅读将履行独家代理的职责，为入围作品争取相关利益，所获收益另行分配。</li>
+				<li>豆瓣阅读有权根据实际情况调整各组别的奖项设置。</li>
+				<li>本活动最终解释权归豆瓣阅读所有。</li>
+				<li>如有任何疑问，请致信 read-competition@douban.com 咨询。</li>
+			</ul>
+		</div>

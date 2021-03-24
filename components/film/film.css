@@ -1,0 +1,223 @@
+
+.film_content{
+    background: #f8f9f9;
+    margin-top:1.3125rem;
+}
+
+.film_content .film_banner{
+    height: 5.1875rem;
+}
+.film_banner img{
+    height: 100%;
+    width: 100%;
+}
+
+.film_presentation{
+    width: 100%;
+    height: 7.6875rem;
+    padding: 0.5625rem 0.40625rem;
+    background: #f8f9f9;
+    font-size: 0.40625rem;
+}
+
+.film_presentation p:first-of-type{
+   margin-bottom: 0.375rem;
+}
+
+.film_presentation p:nth-last-of-type(2){
+    margin-bottom: 0.375rem;
+}
+
+.film_login{
+    width: 9.1875rem;
+    height: 1.40625rem;
+    display: inline-block;
+    border-radius: 1.40625rem;
+    background: #71ceb5;
+    color: #e8fffa;
+    text-align: center;
+    line-height: 1.40625rem;
+    margin: 0.5625rem 0.40625rem;
+    font-size: 0.5rem;
+}
+.film_sale{
+    width: 100%;
+    height: 3.90626rem;
+    background: url("../../images/film_sale.jpg") no-repeat;
+    background-size: 100%;
+    padding: 0.5625rem 0.40625rem;
+    color: #77a4bf;
+    font-size: 0.5rem;
+    font-weight: bold;
+}
+.film_sale .sale_top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.film_sale .sale_down{
+    width: 100%;
+    margin-top: 0.375rem;
+}
+.film_sale .sale_down img{
+    height: 100%;
+    width: 100%;
+}
+
+.film_story{
+    color: #77a4bf;
+    font-size: 0.5rem;
+    font-weight: bold;
+    margin-top: 0.5625rem;
+    text-indent: 0.40625rem;
+}
+
+.film_list{
+    height: 7.84375rem;
+    width: 100%;
+    padding: 0.5625rem 0.40625rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.film_list .film_name{
+    color: #333333;
+    font-size: 0.375rem;
+    font-weight: bold;
+    display: block;
+}
+.film_list .film_info{
+    height: 3.125rem;
+    width: 100%;
+    background: #ebf0f2;
+    padding: 0.375rem 0.46875rem;
+    margin-top: 0.46875rem;
+    display: flex;
+    flex-direction: row;
+
+}
+.film_info .film_img{
+    width: 1.5625rem;
+    height: 100%;
+}
+.film_info .film_img img{
+    width: 100%;
+    height: 100%;
+}
+.note_info{
+    color: #a6a6a6;
+    font-size: 0.375rem;
+    margin-left: 0.3125rem;
+    line-height: 0.625rem;
+}
+
+.p4 .star_black{
+    width: 2.28125rem;
+    display: inline-block;
+    height: 0.4rem;
+    background: url("../../images/film_star.png") no-repeat left center;
+    background-size: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-right: 0.21875rem;
+}
+.p4 .star_red{
+    width: 2.28125rem;
+    display: inline-block;
+    height: 0.4rem;
+    background: url("../../images/film_star.png") no-repeat left top;
+    background-size: 100%;
+    position: absolute;
+    left: -0.45rem;
+    top:0;
+}
+
+.p4 .score{
+    color: #fa595f;
+}
+
+.film_plot{
+    /*height: 2.125rem;*/
+    width: 100%;
+    font-size: 0.40625rem;
+    color: #333333;
+    margin-top: 0.5rem;
+
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+}
+
+
+/*overfilm*/
+.over_film{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+}
+.film_login_registered{
+    width: 96%;
+    height: 60%;
+    margin: 0 auto;
+    background: #ffffff;
+    position: relative;
+    text-align: right;
+    top: 20%;
+    padding: 0.375rem;
+    border-radius: 0.09375rem;
+}
+.film_close{
+    width: 1.408rem;
+    height: 1.408rem;
+    line-height: 1.408rem;
+    color: #77a4b3;
+    font-size: 0.7rem;
+    font-weight: bold;
+    margin-right: 0.4rem;
+}
+
+
+.login{
+    text-align: center;
+    width: 100%;
+}
+.login h2{
+    font-weight: normal;
+    margin-bottom: 0.375rem;
+}
+.login a{
+    display: block;
+    height: 1.40625rem;
+    line-height: 1.40625rem;
+    padding: 0 0.46875rem;
+    border-radius: 1.40625rem;
+    margin: 0 auto 0.3125rem;
+    color: #fff;
+    background: #70ceb5;
+}
+.login a:last-of-type{
+    background: #aae1d3;
+}
+.login fieldset {
+    border-color: transparent;
+    border-top: 1px solid #e0e0e0;
+    margin-top: 1.5rem;
+}
+.login fieldset legend {
+    font-size: 0.4375rem;
+    text-align: center;
+    color: #999999;
+}
+.login i {
+    background-size: 10%;
+    width: 0.75rem;
+    height: 0.59375rem;
+    display: inline-block;
+    background: url("../../images/icon-weixin-friend.png") no-repeat center center;
+    background-size: 100%;
+}

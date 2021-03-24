@@ -1,0 +1,327 @@
+a{
+	color:#333;
+}
+.ebook_explain{
+	margin-top: 1.3125rem;
+}
+.ebook_detail{
+	float: left;
+	margin: 0.6rem 0 0.3rem 0.3rem;
+	width: 6rem;
+}
+.ebook_num{
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.ebook_name{
+	font-size: 0.56rem;
+	font-weight: bold;
+		text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.ebook_product{
+	font-size: 0.4rem;
+		text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.ebook_grade{
+	margin: 0.2rem 0;
+	text-indent: 3rem;
+	font-size: 0.35rem;
+	background: url(../../images/film_star.png) no-repeat left center;
+	background-position: 0 0;
+	background-size: 45%;
+}
+.ebook_author{
+	font-size: 0.35rem;
+	color: #a6a6a6;
+	line-height: 0.5rem;
+		text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.ebook_img{
+	float: left;
+	width: 2.5rem;
+	margin: 0.6rem;
+}
+.ebook_img img{
+	width: 2.5rem;
+}
+.ebook_score{
+	color: #fa595f;
+}
+.ebook_num{
+	color: #A6A6A6;
+}
+.ebook_btn{
+	clear: both;
+	font-size: 0.5rem;
+	line-height: 1rem;
+	text-align: center;
+	margin-left: 0.4rem;
+}
+.ebook_read{
+	display: inline-block;
+	width: 7.5rem;
+	height: 1rem;
+	border-radius: 1rem;
+	background: #71ceb5 url(../../images/ebook_book.png) no-repeat 2rem center;
+	background-size: 15%;
+	color: #fff;
+	float: left;
+	margin-bottom: 0.5rem;
+}
+.ebook_share{
+	float: right;
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 50%;
+	border: 1px solid #E3DFD1;
+	background: url(../../images/icon-share.png) no-repeat center center;
+	margin-right: 0.5rem;
+}
+.ebook_buyandsend{
+	width: 10rem;
+	height: 1.625rem;
+	clear: both;
+	margin: 0.5rem 0 0 0;
+	border-bottom:1px solid #E3DFD1;
+	border-top:1px solid #E3DFD1 ;
+	
+}
+.ebook_price{
+	width: 7rem;
+	height: 1.625rem;
+	font-size: 0.4rem;
+	float: left;
+	line-height: 1.625rem;
+	text-indent: 0.3rem;
+}
+.ebook_buy{
+	display: inline-block;
+	width: 1.5rem;
+	height: 1.2rem;
+	float: left;
+	font-size: 0;
+	margin-top: 0.2rem;
+	border-left: 1px solid #E3DFD1;
+}
+.ebook_send{
+	display: inline-block;
+	width: 1.5rem;
+	height: 1.2rem;
+	float: left;
+	font-size: 0;
+	margin-top: 0.2rem;
+	border-left: 1px solid #E3DFD1;
+}
+.buy{
+	display: inline-block;
+	width: 0.8rem;
+	height: 0.8rem;
+	background: url(../../images/ebook_buy.png) no-repeat left center;
+	background-size: 100%;
+	margin-left: 0.2rem;
+	
+}
+.send{
+	display: inline-block;
+	width: 0.8rem;
+	height: 0.8rem;
+	background: url(../../images/ebook_give.png) no-repeat left center;
+	background-size: 100%;
+	margin-left: 0.2rem;
+}
+.buy_text{
+	font-size: 0.3rem;
+	display:inline-block;
+	text-indent: 0.3rem;
+}
+.send_text{
+	font-size: 0.3rem;
+	display:inline-block;
+	text-indent: 0.35rem;
+}
+.ebook_about{
+	clear: both;
+	background: #f8f9f9;
+}
+.ebook_about h3{
+	font-size: 0.5rem;  
+	padding: 0.5rem 0 0.3rem 0.3rem;
+}
+.about_p{
+	font-size: 0.4rem;
+	margin:0 0.3rem ;
+	line-height: 0.8rem;
+	text-indent: 2em;
+}
+.ebook_about_text{
+	
+}
+
+.ebook_ catalogue h3{
+	font-size: 0.5rem;  
+	margin: 0.5rem 0 0.3rem 0.3rem;
+}
+.ebook_catalogue ul{
+	font-size: 0.4rem;
+	margin-left: 0.3rem;
+}
+.LI1{
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 6;
+	overflow: hidden;
+	white-space: pre-wrap;
+	margin-left: 1rem;
+	line-height: 0.8rem;
+	
+}
+.LI2{
+	margin-left: 1rem;
+	line-height: 0.8rem;
+	display: block;
+}
+
+.tags span{
+	font-size: 0.4rem;
+	display: inline-block;
+	height: 0.8rem;
+	border: 1px solid #A6AEC4;
+	background: #A6AEC4;
+	padding: 0 0.3rem;
+	margin: 0.3rem 0.2rem;
+	border-radius: 0.5rem;
+	line-height: 0.8rem;
+}
+.offer_name{
+	font-size: 0.5rem;
+	margin-left: 0.3rem;
+}
+.talk_about{
+	width: 10rem;
+	text-align: center;
+	font-size: 0.4rem;
+	margin-top: 0.5rem;
+	padding-bottom:0.5rem ;
+}
+
+img{
+	box-shadow: 0.1rem 0.1rem 0.1rem #888888;
+}
+
+.overlay_page1{
+	display: none;
+	width: 10rem
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left:0;
+    right:0;
+    z-index: 1000;
+    background: #444444;
+    opacity: 0.95;
+    animation: run 0.5s linear;
+}
+@keyframes run{
+	from{opacity: 0;}
+	to{opacity: 0.95;}
+}
+
+.warp{
+	opacity: 1;
+	width: 100%;
+	height: 100%;
+}
+.ebook_cont{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 10rem;
+	height: 50%;
+	margin-left:0.5rem;
+}
+
+.share_link{
+	width: 9rem;
+	height: 75%;
+	background: #f8f8f8;
+	border-radius: 0.5rem;
+}
+.share_link p{
+	text-align: center;
+	font-size: 0.6rem;
+}
+.share_link ul{
+	width: 9rem;
+	height: 80%;
+	margin-left: 0.8rem;
+}
+.share_link li{
+	width: 20%;
+	height: 1.5rem;
+	float: left;
+	border-radius: 0.3rem;
+	font-size: 0;
+}
+.share_link i{
+	width: 1.5rem;
+	height: 1.5rem;
+	display: block;
+}
+.share_link span{
+	display: inline-block;
+	width: 100%;
+	font-size: 0.3rem;
+	text-align: center;
+}
+.douban_share{
+	background:#fff url(../../images/icon-douban.png) no-repeat 0.3rem 0.3rem ;
+	margin: 0.3rem;
+}
+.xinlang_share{
+	display: block;
+	background:#fff url(../../images/icon-weibo.png) no-repeat 0.3rem 0.3rem;
+	margin: 0.3rem;
+	
+}
+.pyq_share{
+	display: block;
+	background:#fff url(../../images/icon-weixin-timeline.png) no-repeat 0.3rem 0.3rem;
+	margin: 0.3rem;
+}
+.weix_share{
+	display: block;
+	background:#fff url(../../images/icon-weixin-friend.png) no-repeat 0.3rem 0.3rem;
+	margin: 0.3rem;
+}
+.copy_link{
+	display: block;
+	background:#fff url(../../images/icon-copy.png) no-repeat 0.4rem 0.4rem;
+	margin: 0.3rem;
+	
+}
+.last_li_share{
+	margin: 1rem 0 0 30%;
+}
+.cancel_share{
+	margin-top: 5%;
+	
+	width: 9rem;
+	height: 15%;
+	background: #f8f8f8;
+	border-radius: 0.5rem;
+}
+.cancel_share p{
+	font-size: 0.6rem;
+	width: 9rem;
+	line-height: 1.5rem;
+	text-align: center;
+}

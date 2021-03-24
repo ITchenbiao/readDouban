@@ -1,0 +1,59 @@
+<div class="film_content" ng-controller="filmCtrl">
+    <div class="film_banner">
+        <img src="images/film_banner.jpg" alt="">
+    </div>
+    <div class="film_presentation">
+        <p>在这里，我们将不断公布受读者欢迎的、有改编潜力的豆瓣阅读原创作品，
+            邀请影视行业的专业人士一起参与作品的影视改编。</p>
+        <p>如果你是影视编剧，你可以在「待改编的故事作品」中挑选故事，并提交你的改编剧本大纲。优秀的编剧将获得豆瓣阅读资助，
+            将剧本大纲继续发展成完整剧本，并有机会参与由该作品改编的影视项目，成为署名编剧并获得相应报酬。</p>
+        <p>如果你来自影视公司，有意购买作品的影视改编权或参与投资、制作，欢迎认证「制片方」身份。
+            豆瓣阅读会向你推荐合适的原创作品和改编剧本大纲。</p>
+    </div>
+    <a  class="film_login" ng-click="login()">我是编剧/我是制片方</a>
+    <div class="film_sale">
+        <div class="sale_top" ui-sref="film_sale">
+            <div>已售出的故事作品</div><div>&gt;</div>
+        </div>
+        <div class="sale_down">
+            <img src="images/film_sale1.png" alt="">
+        </div>
+    </div>
+    <div class="film_story">待改编的故事作品</div>
+    <div class="film_list" ng-repeat="x in data"   ui-sref="film_list" ng-click="set_id(x.id)">
+        <a href="#" class="film_name">{{x.title}}</a>
+        <div class="film_info">
+            <div class="film_img"><img ng-src="{{x.image}}" alt=""></div>
+            <div class="note_info">
+                <p>作者：{{x.author[0]}}</p>
+                <p>字数：约 40,000 字</p>
+                <p >标签： <span ng-repeat="y in x.tags.slice().reverse() | limitTo:2">{{y.name}} </span></p>
+                <p class="p4">
+                        <span class="star_black">
+                            <span class="star_red"></span>
+                        </span>
+                    <span class="score"> {{x.rating.average}} </span>
+                    |
+                    <span class="integral">{{x.rating.numRaters}} 人评价</span>
+                </p>
+            </div>
+        </div>
+        <p class="film_plot">{{x.summary}}</p>
+    </div>
+ </div>
+
+<div class="over_film">
+    <div class="film_login_registered" ng-click="closeLogin()">
+        <span class="film_close">x</span>
+        <div class="login">
+            <h2>使用豆瓣账号登录</h2>
+            <a href="#">登录</a>
+            <a href="#">注册</a>
+            <fieldset>
+                <legend>使用其他方式登录豆瓣</legend>
+            </fieldset>
+            <i></i><span class="weixin">微信登录</span>
+        </div>
+    </div>
+
+</div>

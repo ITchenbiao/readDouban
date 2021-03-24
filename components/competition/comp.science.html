@@ -1,0 +1,58 @@
+
+<div class="comp_top">
+	<div class="comp_p">
+	<p class="about">
+		幻想未来是会上瘾的，讨论「遥远的未来是什么样的」，固然令人心驰神往，但也颇为虚无缥缈。 把眼光放得「近」一些，憧憬一个不太遥远的未来世界，不管怎样，这些故事应当包含对现实世界的推演和想象。 本届征文的科幻故事即以「近未来」作为主题。
+	</p>
+	</div>
+	<div class="rewards">
+		<h3>奖项</h3>
+		<ul>
+			<li>
+				<span class="first_span"></span>
+				<div class="first_reward">
+					<p class="rewards_first_p">首奖</p>
+					<p class="rewards_sec_p">1名，奖金2万元</p>
+				</div>
+			</li>
+			<li>
+				<span class="excellent_span"></span>
+				<div class="excellent_reward">
+					<p class="rewards_first_p">优秀奖</p>
+					<p class="rewards_sec_p">3名，奖金各1万元</p>
+				</div>
+			</li>
+			<li>
+				<span class="special_span"></span>
+				<div class="special_rewards">
+					<p class="rewards_first_p">特别奖·最佳科幻概念奖</p>
+					<p class="rewards_sec_p">1名，奖金1万元</p>
+				</div>
+			</li>
+			<li>
+				<span class="special_span"></span>
+				<div class="special_rewards">
+					<p class="rewards_first_p">特别奖·中国场景科幻故事奖</p>
+					<p class="rewards_sec_p">1名，奖金1万元</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="comp_bottom">
+	<div class="book_list" ng-repeat="x in items">
+		<figure ng-click="putStorage(x.id)" ui-sref="ebook">
+			<img class="book_img" ng-src={{x.image}}  lazy-src={{x.image}} animate-visible="true" animate-speed="0.5s" err-src="images/err_img.png">
+			<figcaption>
+				<h3 class="book_name">{{x.title}}</h3>
+				<p class="book_author">{{x.author[0]}}</p>
+				<p class="book_star"><span class="book_grade">{{x.rating.average}}</span>|<span class="book_num">{{x.rating.numRaters}}</span>人评价</p>
+				<a ui-sref="reader.ebook.id" class="book_read">阅读</a>
+			</figcaption>
+		</figure>
+		<div class="book_recommend">
+			<h3>作者介绍</h3>
+			<p>{{x.author_intro}}</p>
+		</div>
+	</div>
+</div>

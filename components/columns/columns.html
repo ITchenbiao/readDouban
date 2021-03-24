@@ -1,0 +1,78 @@
+<!--标题二级-->
+<div class="mod-columns">
+	<div class="top-text">
+		<h1>{{head}}</h1>
+		<div class="sub-tit">{{subTit}}
+			<a href="javascript:void(0)" class="lnk-more">了解更多 ></a>
+		</div>
+		<!--轮播-->
+		<div class="slider">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="images/column_ban1.jpg"></div>
+					<div class="swiper-slide"><img src="images/column_ban2.jpg"></div>
+					<div class="swiper-slide"><img src="images/column_ban3.jpg"></div>
+					<div class="swiper-slide"><img src="images/column_ban4.jpg"></div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+
+	</div>
+
+</div>
+<!--近期热门-->
+<div class="cate-mod-hot">
+	<div class="mod-books-tit">
+		<h3>近期热门</h3>
+		<a class="enter-more" ng-click="goList()"></a>
+	</div>
+	<div class="books-conl-main">
+		<div class="books-conl-outer">
+			<div class="item-book" ui-sref="ebook" ng-repeat="x in hotData | limitTo:10" ng-click="getDataText(x.id)">
+				<div class="cover">
+					<img ng-src={{x.image}} lazy-src={{x.image}} animate-visible="true" animate-speed="0.5s" err-src="images/err_img.png">
+				</div>
+				<h3 class="book-title">{{x.title}}</h3>
+				<p class="book-info">{{x.tags[6].title}}</p>
+				<p class="book-info">{{x.author[0]}}</p>
+				<p class="subscribe-num">1984人订阅</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="clearfix"></div>
+<!-----------------------最近更新---------------------------->
+<div class="cate-mod">
+	<div class="mod-books-tit">
+		<h3>最近更新</h3>
+		<a class="enter-more" ng-click="goList2()"></a>
+	</div>
+	<div class="books-con-main">
+		<div class="books-con-outer">
+			<div class="item-book" ui-sref="ebook" ng-repeat="x in updateData | limitTo:10" ng-click="getDataText(x.id)">
+				<div class="cover">
+					<img ng-src={{x.image}} lazy-src={{x.image}} animate-visible="true" animate-speed="0.5s" err-src="images/err_img.png" />
+				</div>
+				<h3 class="book-title">{{x.title}}</h3>
+				<p class="book-info">{{x.tags[6].title}}</p>
+				<p class="book-info">{{x.author[0]}}</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="clearfix"></div>
+<!--专栏分类-->
+<div class="columns-home-categories">
+	<div class="classify-colu">
+		<h2>{{cateHead}}</h2>
+	</div>
+	<ul class="categories-list" ng-click="getLiText($event)">
+		<li ui-sref="category" ng-repeat="x in category">{{x}}</li>
+	</ul>
+</div>
+
+<div class="clearfix"></div>
+<div style="width: 10rem; height: 0.9375rem;"></div>
+
+<div ui-view=""></div>

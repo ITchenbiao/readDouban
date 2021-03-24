@@ -1,0 +1,77 @@
+<div class="reader-ebook-id-main" data-ng-init="readerEbookInit()">
+
+	<div class="read-ebook-back" ng-show="viewCtrl">
+		<a ui-sref="reader.ebook"><span class="go-back"></span></a>
+	</div>
+	<div class="reader-home" ng-click="contrlScreenView($event)">
+		<div class="reader-ebook-title">
+			<h2 class="title">{{title}}</h2>
+		</div>
+		<div class="info">
+			<p class="author">作者：{{author}}</p>
+			<p class="publisher">{{publisher}}</p>
+		</div>
+		<div class="copyright">
+			本作品由理想国授权北京豆网科技有限公司全球范围内电子版制作与发行。<br /> &copy;版权所有，侵权必究。
+		</div>
+	</div>
+
+	<div class="reader-ctrl" ng-show="viewCtrl">
+		<div class="controls-pages">
+			<input class="page-input" type="range" step="1" min="1" max="54" />
+		</div>
+		<div class="controls-list">
+			<div class="arkicon-list" ng-click="viewArkicon()">
+			</div>
+			<div class="style-text" ng-click="viewMoreStyle()">
+
+			</div>
+			<div class="set-style-text" ng-show="viewText">
+				写各种的样式样式|换夜间模式|护眼模式|更换字体|等
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<div class="open-arkicon-list" ng-show="arkiconList">
+	<div class="arkicon-title">
+		<span class="arkicon-left"></span>
+		<span>目录</span>
+		<span class="arkicon-right"></span>
+	</div>
+	<div class="arkicon-conten">
+
+		<ul class="arkicon-item">
+			<li id="cataLi" ng-repeat="x in arr">
+				<a class="arkiocn-list" href=""><span></span>{{x}}</a>
+			</li>
+		</ul>
+
+	</div>
+	<div class="arkiocn-close" ng-click="viewArkicon()">
+
+	</div>
+</div>
+
+<div class="over_film" ng-click="closeOver()">
+	<div class="backPage" >上一页</div>
+	<div class="bookMenu">菜单</div>
+	<div class="nextPage">下一页</div>
+</div>
+
+
+<div class="changeTextStyle">
+	<div class="text_top">
+	<span class="smalltext" ng-click="smallText()">A-</span><span class="bigtext" ng-click="bigText()">A+</span><span ng-click="changeFontStyle()">换字体</span>
+	</div>
+	<div class="text_center">
+		<span ng-click="changeBackColor(0)" style="background: #b7a6a8;"></span>
+		<span ng-click="changeBackColor(1)" style="background: #f5ca64;"></span>
+		<span ng-click="changeBackColor(2)" style="background: #ca5a69;"></span>
+		<span ng-click="changeBackColor(3)" style="background: #5ecca1;"></span>
+		<span ng-click="changeBackColor(4)" style="background: #c05a32;"></span>
+		<span ng-click="changeBackColor(5)" style="background: #9a9a9a;"></span>
+	</div>
+	<div class="text_down"><span class="day_text" ng-click="day_text()">日间模式</span><span class="normol_text" ng-click="normol_text()">标准模式</span><span class="night_text" ng-click="night_text()">夜间模式</span></div>
+</div>

@@ -1,0 +1,353 @@
+.reader-top {
+	display: none;
+}
+
+.bookshelf {
+	display: none;
+}
+
+.reader-column {
+	display: none;
+}
+
+.footer {
+	display: none;
+}
+
+.header {
+	display: none;
+}
+body {
+	height: 100%;
+	width: 10rem;
+	background: #f6f4ec;
+}
+.reader-ebook-id-main,
+.open-arkicon-list{
+	font-family: "arkitalic", "Georgia Italic", "Georgia-Italic", "Georgia", STKaiti, "AR PL UKai", "AR PL KaitiM GB", KaiTi, KaiTi_GB2312, "TW-Kai", cursive;
+	
+}
+.read-ebook-back{
+	position:fixed;
+	width:10rem;
+	top:0;
+	left:0;
+	height:1.4rem;
+	background:rgba(1,1,1,.6);
+	/*background-image:url(../../images/)*/
+}
+.go-back{
+	width:1.4rem;
+	height:1.4rem;
+	display:inline-block;
+	background:url(../../images/ebook_go_back.png) no-repeat left center;
+	background-size:60%;
+}
+.reader-ebook-id-main {
+	width: 10rem;
+	height:100%;
+}
+
+.reader-ctrl{
+	color:#fff;
+	position:fixed;
+	bottom:0;
+	width:10rem;
+	height:2.5rem;
+	background:rgba(1,1,1,.6);
+}
+
+.reader-home {
+	height: 100%;
+	width: 10rem;
+	padding:0 0 3.8rem 0;
+}
+
+.reader-ebook-title {
+	height: 1.25rem;
+	width: 10rem;
+	/*line-height: 1.25rem;*/
+	text-align: center;
+	margin: 4.375rem 0 1.5625rem;
+	padding:0 .3rem;
+}
+
+.reader-ebook-title .title {
+	font-size: 1rem;
+	font-weight: normal;
+	color: #222;
+}
+
+.reader-home .info,
+.reader-home .author,
+.reader-home .publisher,
+.reader-home .copyright {
+	font-size: .375rem;
+	color: #333;
+	line-height: .5rem;
+	margin-left: .625rem;
+}
+
+.reader-home .copyright {
+	padding: 0 .6rem;
+	margin-top: 1.4375rem;
+}
+
+/*reader-ctrl*/
+
+
+.controls-pages {
+	height: .8rem;
+	width: 10rem;
+}
+
+.controls-pages .page-input {
+	width: 10rem;
+	height: .5rem;
+	background: #adaca6;
+}
+
+.controls-list {
+	width: 10rem;
+	height: 1.2rem;
+	font-size: 0;
+}
+
+.controls-list .arkicon-list,
+.controls-list .style-text {
+	height: 100%;
+	width: 1rem;
+	font-size: .3rem;
+	display: inline-block;
+	text-align: center;
+	padding-top: .6rem;
+	background: url(../../images/arkicon_list.png) no-repeat top;
+	background-size: 70%;
+	color: #666;
+}
+
+.controls-list .style-text {
+	background: url(../../images/reader_a.png) no-repeat top;
+	background-size: 70%;
+}
+
+.read-page {
+	display: none;
+	position: absolute;
+	bottom: .7rem;
+	font-size: .375rem;
+	color: #333;
+	left: 50%;
+}
+/*open-arkicon-list*/
+.open-arkicon-list {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: #f6f4ec;
+	width: 10rem;
+	height: 100%;
+}
+
+.arkicon-title {
+	height: 2.5rem;
+	width: 10rem;
+	text-align: center;
+	line-height: 2.5rem;
+	position: relative;
+}
+
+.arkicon-title span {
+	font-size: .45rem;
+	display: inline-block;
+	color: #888888;
+}
+
+.arkicon-left,
+.arkicon-right {
+	position: absolute;
+	top: 30%;
+	height: 1rem;
+	width: .7rem;
+	display: inline-block;
+	left: 30%;
+	background: url('../../images/icon_patterns.png') no-repeat left;
+	background-size: 200%;
+}
+
+.arkicon-right {
+	top: 30%;
+	left: 60%;
+	background: url('../../images/icon_patterns.png') no-repeat right;
+	background-size: 200%;
+}
+
+.arkicon-conten {
+	height: 14.15625rem;
+	width: 9rem;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.arkicon-item {
+	width: 10rem;
+	height:100%;
+	overflow: scroll;
+	margin: 0 auto;
+}
+
+.arkicon-item li {
+	height: 1.25rem;
+	width: 9rem;
+	line-height: 1.25rem;
+	position:relative;
+}
+
+.arkicon-item li a {
+	width: 100%;
+	height: 100%;
+	display: block;
+	font-size: .375rem;
+	font-weight: bold;
+}
+
+.arkicon-item li span{
+	position:absolute;
+	right:8%;
+	top:2%;
+}
+.arkiocn-list-copy {
+	border: 1px solid #825d5b;
+	color: #825d5b;
+	border-left: 0;
+	border-right: 0;
+}
+
+.arkiocn-list {
+	border-bottom: 1px solid #e9eadf;
+	color: #6e6e6e;
+}
+.arkiocn-list-off{
+	border-bottom: 1px solid #e9eadf;
+	color: #bbbbbb;
+}
+.arkiocn-list-list-ok{
+	text-indent:2em;
+	border-bottom: 1px solid #e9eadf;
+	color: #6e6e6e;
+}
+
+.arkiocn-list-list-off{
+	text-indent:2em;
+	border-bottom: 1px solid #e9eadf;
+	color: #bbbbbb;
+}
+.arkiocn-close{
+	height:1rem;
+	width:10rem;
+	background:url(../../images/arrow_dow.png) no-repeat center;
+	background-size:6%;
+	box-shadow:0 -.1rem .2rem #c3c1bb;
+}
+.set-style-text{
+	height:3rem;
+	width:10rem;
+	position:fixed;
+	bottom:0;
+	color:#fff;
+	left:0;
+	right:0;
+	background:#333;
+	/*background:Red;*/
+}
+
+.over_film{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.8);
+	position: fixed;
+	left: 0;
+	top: 0;
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	color: #ffffff;
+	font-size: 0.4375rem;
+}
+.over_film div{
+	padding-top: 80%;
+}
+.over_film .backPage{
+	border-right: 1px solid cyan;
+	flex-grow: 1;
+}
+.over_film .bookMenu{
+	border-right: 1px solid cyan;
+	flex-grow: 1;
+}
+.over_film .nextPage{
+	flex-grow: 1;
+}
+
+.changeTextStyle{
+	width: 100%;
+	background: rgba(0,0,0,0.8);
+	display: none;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	color: #ffffff;
+	font-size: 0.4375rem;
+	padding: 0.5rem;
+}
+.text_top{
+	height: 0.75rem;
+	width: 100%;
+	line-height: 0.75rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 0.375rem;
+}
+.text_top span{
+	width: 30%;
+	display: inline-block;
+	height: 0.75rem;
+	text-align: center;
+	border: 1px solid #dddddd;
+	border-radius: 0.09375rem;
+}
+.text_center{
+	line-height: 0.75rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 0.375rem;
+	border-top: 1px solid #a6a6a6;
+	border-bottom: 1px solid #a6a6a6;
+	padding:0.375rem 0;
+}
+.text_center span{
+	display: inline-block;
+	border-radius: 50%;
+	height: 0.85rem;
+	width: 0.85rem;
+	border: 0.0625rem solid transparent;
+}
+
+.text_down{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	line-height: 0.75rem;
+}
+.text_down span{
+	width: 30%;
+	display: inline-block;
+	height: 0.75rem;
+	text-align: center;
+	border: 1px solid #dddddd;
+	border-radius: 0.09375rem;
+}

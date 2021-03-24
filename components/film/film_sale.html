@@ -1,0 +1,27 @@
+<div class="film_sale_content">
+    <div class="film_sale_top">
+        已达成交易
+    </div>
+    <div class="sale_film_list">
+        <div class="sale_list" ng-repeat="x in data" ui-sref="film_list" ng-click="set_id(x.id)">
+            <a href="#" class="film_name">{{x.title}}</a>
+            <div class="film_info">
+                <div class="film_img"><img ng-src="{{x.image}}" alt=""></div>
+                <div class="note_info">
+                    <p>作者：{{x.author[0]}}</p>
+                    <p>字数：约 40,000 字</p>
+                    <p>标签：<span ng-repeat="y in x.tags.slice().reverse() | limitTo:2">{{y.name}} </span></p>
+                    <p class="p4">
+                        <span class="star_black">
+                            <span class="star_red"></span>
+                        </span>
+                        <span class="score">{{x.rating.average}}</span>
+                        |
+                        <span class="integral">{{x.rating.numRaters}} 人评价</span>
+                    </p>
+                </div>
+            </div>
+            <p class="film_plot">{{x.summary}}</p>
+        </div>
+    </div>
+</div>
